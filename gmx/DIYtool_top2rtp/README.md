@@ -1,0 +1,6 @@
+
+1. 本例以F取代C2上的两个H原子为例
+1. 文件夹01_acpype_online_result中是acpype online生成的结果
+1. 文件夹02_bare_forcefield_file中是amber99sb-ildn.ff力场中的原始文件
+1. 文件夹03_scritp_bingo中itp2rtp.py脚本用于基于acpype生成的itp文件生成力场所需的rtp、atometype、nonbond、bond这类文件，复制到白板力场中去即可，后面运行如果提示哪几个有重复就把重复的注释掉。
+1. 因为要考虑新的自定义残基与其他残基的链接原子的成键和键角，所以python脚本输入选择原子时要把连接原子一起输入，但最后在rtp的atoms字段去掉
